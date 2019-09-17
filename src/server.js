@@ -33,8 +33,9 @@ app.route('/api/notifications/enable')
     .post(send_notification_route_1.sendNotification);
 app.route('/api/enrollments/clear')
     .get(enrollment_service_route_1.clearAllEnrollments);
-var PORT = 9000;
-var HOST = 'localhost';
-var httpServer = app.listen(process.env.PORT, process.env.PORT, function () {
-    console.log("HTTP Server running at http://" + HOST + ":" + PORT);
-});
+//var PORT = 9000;
+//var HOST = 'localhost';
+//var httpServer = app.listen(PORT, PORT, function () {
+//    console.log("HTTP Server running at http://" + HOST + ":" + PORT);
+//});
+app.listen(process.env.PORT || 5000);
