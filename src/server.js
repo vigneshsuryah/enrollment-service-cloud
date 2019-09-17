@@ -35,6 +35,6 @@ app.route('/api/enrollments/clear')
     .get(enrollment_service_route_1.clearAllEnrollments);
 var PORT = 9000;
 var HOST = 'localhost';
-var httpServer = app.listen(PORT, HOST, function () {
+var httpServer = app.listen(process.env.PORT, process.env.PORT, function () {
     console.log("HTTP Server running at http://" + HOST + ":" + PORT);
 });
