@@ -1,0 +1,23 @@
+{
+  "name": "enrollment-reporter-app",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "npm": "^6.11.3",
+    "to": "^0.2.9",
+    "update": "^0.7.4",
+    "web-push": "^3.2.5"
+  },
+  "devDependencies": {
+    "@types/node": "^8.9.5",
+    "ts-node": "~5.0.1",
+    "tslint": "~5.9.1",
+    "typescript": "~2.7.2"
+  }
+}
