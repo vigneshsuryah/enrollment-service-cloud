@@ -18,7 +18,7 @@ function getAllStates(req, res) {
 }
 exports.getAllStates = getAllStates;
 function getAllPlans(req, res) {
-    res.status(200).json({"states":['Anthem Senior Advantage Basic - HMO','Anthem Senior Advantage Plus - HMO','Anthem Balanced Blue Choice Basic - PPO','Anthem Balanced Blue Choice Plus - PPO','Blue Cross Senior Secure Basic - HMO','Blue Cross Senior Secure Plus - HMO']});
+    res.status(200).json({"states":['Senior Advantage Basic - HMO','Senior Advantage Plus - HMO','Balanced Blue Choice Basic - PPO','Balanced Blue Choice Plus - PPO','Blue Cross Senior Secure Basic - HMO','Blue Cross Senior Secure Plus - HMO']});
 }
 exports.getAllPlans = getAllPlans;
 function clearAllEnrollments(req, res) {

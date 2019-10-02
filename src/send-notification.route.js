@@ -6,8 +6,8 @@ function sendNotification(req, res) {
     console.log('Total subscriptions', in_memory_db_1.USER_SUBSCRIPTIONS.length);
     var notificationPayload = {
         "notification": {
-            "title": "Enrollment Register App",
-            "body": "Enrollment registration in progress... Go to app!",
+            "title": "Enrollment App",
+            "body": "Enrollment Completed Successfully !!!",
             "icon": "assets/icon-72x72.png",
             "vibrate": [100, 50, 100],
             "data": {
@@ -15,9 +15,9 @@ function sendNotification(req, res) {
                 "primaryKey": 1
             },
             "actions": [{
-                    "action": "explore",
-                    "title": "Go to the site"
-                }]
+                "action": "explore",
+                "title": "Go to the site"
+            }]
         }
     };
     Promise.all(in_memory_db_1.USER_SUBSCRIPTIONS.map(function (sub) { return webpush.sendNotification(sub, JSON.stringify(notificationPayload)); }))
